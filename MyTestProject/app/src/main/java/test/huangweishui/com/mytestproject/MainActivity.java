@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+int a=0;
         
         setContentView(R.layout.activity_main);
         UMConfigure.init(this, "", ChannelUtil.getChannel(this), UMConfigure.DEVICE_TYPE_PHONE, "");
