@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        
         setContentView(R.layout.activity_main);
         UMConfigure.init(this, "", ChannelUtil.getChannel(this), UMConfigure.DEVICE_TYPE_PHONE, "");
         TinkerInstaller.onReceiveUpgradePatch(getApplicationContext(), Environment.getExternalStorageDirectory().getAbsolutePath() + "/patch_signed_7zip.apk");
